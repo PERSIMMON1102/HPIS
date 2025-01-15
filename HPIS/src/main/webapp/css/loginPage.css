@@ -1,0 +1,261 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 1200px;
+    height: 60px;
+    padding: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+.head p{
+    margin-top: 12px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    line-height: 1.2; 
+    letter-spacing: 1px;
+    text-align: center; 
+ 
+}
+
+
+.mainContent {
+	background-image:url('../images/BACKS.png');
+	background-size: cover;
+    margin-left: 150px;
+    width: 1180px;
+    height: 600px;
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.mainContent > div {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.leftDiv {
+    float: left;
+}
+
+.text1 {
+    margin-left: 60px;
+    margin-top: 90px;
+    width: 350px;
+    height: 60px;
+}
+	
+.texts1 span{
+	color: red;
+}
+.leftDiv > img {
+    margin-top: 30px;
+    margin-left:120px;
+	height: 230px;
+    width: 230px;
+}
+
+.text1 > p {
+    color: white;
+    font-size: 34px;
+    float: left;
+    margin-left: 20px;
+}
+
+.headText {
+    text-align: center;
+}
+
+.loginDiv {
+    width: 500px;
+    height: 400px;
+    margin: 70px;
+    float: left;
+    background-color: white;
+    border: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+}
+
+.headText {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #DD871C;
+}
+
+.headText .first_login {
+    padding-left: 50px;
+}
+
+
+.btn {
+  width:75px;
+  height: 45px;
+  background: #00b0dc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #e1e1e1;
+}
+
+.btn:hover {
+  border:1px solid #253737;
+  text-shadow:0 1px 0 #333333;
+  background:#3f95de;
+  color:#fff;
+}
+/* 统一输入框样式 */
+#accountLogin {
+    margin-left: 70px;
+	margin: 30px;
+	
+}
+#accountPassword {
+	 margin-left: 70px;
+	 margin: 30px;
+	  margin-bottom: 0px; 
+}
+#smsLogin {
+    margin-left: 70px;
+	margin: 30px;
+	
+}
+#smsPassword {
+	 margin-left: 70px;
+	 margin: 30px;
+	  margin-bottom: 0px; 
+}
+#accountLogin span {
+    font-size: 23px;
+    color: #DD871C;
+    margin-left: 25px;
+}
+#accountPassword span{
+	font-size: 23px;
+	color: #DD871C;
+	margin-left: 25px;
+}
+
+#accountLogin input {
+    width: 300px;
+    border: 3px solid #DD871C;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding-left: 10px; /* 增加内边距使得文本不贴边 */
+}
+#accountPassword input {
+    width: 300px;
+    border: 3px solid #DD871C;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding-left: 10px; /* 增加内边距使得文本不贴边 */
+}
+#smsLogin span {
+    font-size: 23px;
+    color: #DD871C;
+    margin-left: 25px;
+}
+#smsPassword span{
+	font-size: 23px;
+	color: #DD871C;
+	margin-left: 25px;
+}
+
+#smsLogin input {
+    width: 272px;
+    border: 3px solid #DD871C;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding-left: 10px; /* 增加内边距使得文本不贴边 */
+}
+#smsPassword input {
+    width: 272px;
+    border: 3px solid #DD871C;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding-left: 10px; /* 增加内边距使得文本不贴边 */
+}
+.text2 {
+    color: #DD871C;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 380px;
+}
+.other-login-wrapper {
+    width: 100%;
+    display: flex; /* 使用Flexbox来布局 */
+    justify-content: center; /* 居中对齐 */
+    align-items: center; /* 垂直居中 */
+}
+
+.other-login-wrapper .other-login-item {
+    margin: 0 10px; /* 设置水平间距 */
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(51, 49, 116);
+    transition: 0.4s;
+}
+
+.other-login-wrapper .other-login-item img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.text3 {
+    color: #DD871C;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 83px; /* 可以根据需要调整 */
+}
+
+.other-login-wrapper .text3 {
+    align-self: center; /* 保持文本与图标居中对齐 */
+}
+.other-login-wrapper .other-login-item:hover {
+width: 80px;
+height: 50%;
+background-color: #fff;
+border: 0;
+box-shadow: -20px 10px 32px 1px rgba(182, 183, 185, 0.37);
+}
+.loginBT {
+    display: block;
+    margin-top: 10px;
+    padding: 1px;
+    width: 200px;
+    height: 40px;
+    margin-left: 175px;
+    text-decoration: none;
+    background: #DD871C;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+	margin-bottom: 40px;
+}
+
+.loginBT > p {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.info{
+	color: red;
+	margin-left: 200px;
+}

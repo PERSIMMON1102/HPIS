@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+ <configuration>
+	<typeAliases>
+    	<typeAlias alias="RegistrationMap" type="Patient.pojo.Registration"/>
+    	<typeAlias alias="DoctorMap" type="Patient.pojo.Doctor"/>
+    	<package name="Patient.pojo"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="Patient/dao/TypeMapper.xml"/>
+		<mapper resource="Patient/dao/PatientMapper.xml"/>
+		<mapper resource="Patient/dao/RegistrationMapper.xml"/>
+		<mapper resource="Patient/dao/DoctorMapper.xml"/> 
+	</mappers>
+</configuration>
+  

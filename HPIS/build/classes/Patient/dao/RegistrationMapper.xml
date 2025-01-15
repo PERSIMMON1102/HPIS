@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+ <mapper namespace="Patient.dao.RegistrationDao">
+ 
+    <resultMap type="Patient.pojo.Registration" id="RegistrationMap">
+        <id column="id" property="id" />
+        <result column="patient_id" property="patientId" />
+        <result column="doctor_id" property="doctorId" />
+        <result column="date" property="date" />
+    </resultMap>
+ 
+    <select id="findAllRegistrations" resultMap="RegistrationMap">
+        SELECT * FROM registration
+    </select>
+     
+    <delete id="deleteRegistration" parameterType="int">
+         DELETE FROM registration WHERE id = #{id}
+    </delete>
+     
+    <update id="updateRegistration" parameterType="Patient.pojo.Registration">
+         UPDATE registration
+         <set>
+            <if test="patientId != null and patientId != ''">
+                patient_id = #{patientId},
+            </if>
+            <if test="doctorId != null and doctorId != ''">
+                doctor_id = #{doctorId},
+            </if>
+            <if test="date != null and date != ''">
+                date = #{date},
+            </if>
+         </set>
+         WHERE id = #{id}
+    </update>
+     
+    <insert id="addRegistration" parameterType="Patient.pojo.Registration">
+         INSERT INTO registration VALUES 
+         (null, #{patientId}, #{doctorId}, #{date})
+    </insert>
+     
+    <select id="isRegistration" parameterType="Patient.pojo.Registration" resultType="int">
+         SELECT COUNT(*) FROM registration
+         WHERE patient_id = #{patientId} AND doctor_id = #{doctorId}
+    </select>
+</mapper>
